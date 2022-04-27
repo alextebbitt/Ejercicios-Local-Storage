@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Web storage</h1>
+    <div style="margin: 20px">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" />
+    </div>
+    <div style="margin: 20px">
+      <label for="email"> Email </label>
+      <input
+        id="email"
+        type="email"
+        name="email"
+        placeholder="juangomez@gmail.com"
+        required
+      />
+    </div>
+    <div style="margin: 20px">
+      <label for="subject">Subject</label>
+      <textarea
+        id="subject"
+        name="subject"
+        placeholder="Write something.."
+        rows="6"
+        cols="70"
+      ></textarea>
+    </div>
+    <button id="btn">Submit</button>
+
+    <div id="datos"></div>
+    <button onclick="goingtoDelete()">Button to delete</button>
+    <script src="./localstorage.js"></script>
+  </body>
+</html>
